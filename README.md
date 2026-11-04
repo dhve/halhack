@@ -16,7 +16,7 @@ For local preview, run `python3 -m http.server 4173` and open `http://localhost:
 
 - `index.html` contains the page content and links.
 - `styles.css` contains responsive styles.
-- `app.js` controls mobile navigation.
+- `app.js` controls the illustrative agent diagram and mobile navigation.
 - `assets/` contains the favicon and the supplied NANDA Town replay image.
 
-The NANDA Town image shows an older replay. Event dates, detailed rules, prizes, and partner commitments are not announced on the page.
+The agent diagram is conceptual, not a benchmark. The NANDA Town image shows an older replay. Event dates, detailed rules, prizes, and partner commitments are not announced on the page.
