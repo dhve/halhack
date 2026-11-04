@@ -91,7 +91,7 @@ p { font-size: 16px; line-height: 1.75; }
 @media (max-width: 1050px) {
   .wrap { width: calc(100% - 80px); }
   .hero { gap: 6%; padding-block: 65px; }
-  h1 { font-size: 73px; letter-spacing: -3.5px; }
+  h1 { font-size: clamp(57px, 7vw, 73px); letter-spacing: -3.5px; }
   .hero-description { font-size: 15px; }
   .ruled-section, .build-list article, .playground-inner { gap: 7%; grid-template-columns: 1fr 1.15fr; }
   h2 { font-size: 37px; }
