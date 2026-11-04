@@ -2,7 +2,7 @@
 
 The landing page for the human–agent loop hackathon.
 
-Live site: https://dhve.github.io/halhack/
+Live site: https://halhack.projectnanda.org/
 
 The site is static HTML, CSS, and JavaScript. GitHub Pages publishes the repository root from the main branch. No build step or API keys are needed.
 
