@@ -78,7 +78,7 @@
   const updateMotion = () => {
     panel.classList.toggle('motion-paused', paused);
     motionButton.setAttribute('aria-pressed', String(paused));
-    motionButton.textContent = paused ? 'Resume motion ▷' : 'Pause motion Ⅱ';
+    motionButton.textContent = paused ? 'Resume motion' : 'Pause motion';
     if (reducedMotion.matches) { motionButton.textContent = 'Reduced motion'; motionButton.disabled = true; }
     else motionButton.disabled = false;
   };
