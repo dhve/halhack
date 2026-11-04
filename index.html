@@ -3,95 +3,92 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#f4f2eb">
-  <title>HALHack | Build agents. Keep humans in the loop.</title>
-  <meta name="description" content="The human–agent loop hackathon. Build agents, design oversight, and explore how people can understand and steer a shared world of AI agents. Join the pilot interest list.">
-  <meta property="og:title" content="HALHack | The human–agent loop hackathon">
-  <meta property="og:description" content="Build agents. Keep humans in the loop. Join the HALHack pilot interest list.">
+  <meta name="theme-color" content="#faf9f5">
+  <title>HALHack | A hackathon for people and AI agents</title>
+  <meta name="description" content="Build AI agents and the tools people need to understand and guide them. Join the HALHack pilot interest list.">
+  <meta property="og:title" content="HALHack | The human-agent loop hackathon">
+  <meta property="og:description" content="Build agents people can work with. Join the HALHack pilot interest list.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dhve.github.io/halhack/">
   <link rel="canonical" href="https://dhve.github.io/halhack/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
-<noscript><style>.menu-toggle,.swarm-controls,#motion-toggle{display:none}@media(max-width:600px){.site-header{height:auto;min-height:74px;flex-wrap:wrap;padding-top:20px;padding-bottom:20px}.site-header nav{display:flex;position:static;padding:0;box-shadow:none;border:0;flex-basis:100%;flex-direction:row;flex-wrap:wrap;gap:12px}.site-header nav>a:not(.nav-cta){display:block}}</style></noscript>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <a class="wordmark" href="#" aria-label="HALHack home"><span class="logo-mark" aria-hidden="true">h<span></span></span>HAL<span class="wordmark-light">Hack</span><span class="logo-dot" aria-hidden="true"></span></a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">+</span></button>
+  <header class="site-header wrap">
+    <a class="wordmark" href="#main" aria-label="HALHack home">HALHack</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" hidden>Menu</button>
     <nav id="navigation" aria-label="Main navigation">
-      <a href="#challenge">The challenge</a><a href="#playground">The playground</a><a href="#format">How it works</a>
-      <a class="nav-cta signup-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdqJABBjGomKl8RuxCctWu_xx_ae_FIbQKlIT2qrqQNdUobwQ/viewform?usp=header" target="_blank" rel="noopener">Join the pilot <span aria-hidden="true">↗</span></a>
+      <a href="#about">About</a><a href="#playground">NandaTown</a><a href="#pilot">The pilot</a>
+      <a class="nav-signup signup-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdqJABBjGomKl8RuxCctWu_xx_ae_FIbQKlIT2qrqQNdUobwQ/viewform?usp=header" target="_blank" rel="noopener">Join us</a>
     </nav>
   </header>
   <main id="main">
-    <section class="hero section-wrap" aria-labelledby="hero-title">
+    <section class="hero wrap" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> The human–agent loop hackathon</p>
-        <h1 id="hero-title">Build agents.<br>Keep <span class="human-word">humans<svg viewBox="0 0 330 16" aria-hidden="true"><path d="M3 11C76 2 236 1 325 10"/></svg></span><br>in the loop.</h1>
-        <p class="hero-description">Create a world of AI agents that people can understand, steer, and work with. Build the agents. Design the oversight. Help shape the rules.</p>
-        <div class="hero-actions"><a class="button button-dark signup-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdqJABBjGomKl8RuxCctWu_xx_ae_FIbQKlIT2qrqQNdUobwQ/viewform?usp=header" target="_blank" rel="noopener">Join the pilot <span aria-hidden="true">↗</span></a><a class="text-link" href="#challenge">Explore the challenge <span aria-hidden="true">↓</span></a></div>
-        <p class="hero-note">Pilot interest is open. Dates and event details to follow.</p>
+        <p class="overline">The human-agent loop hackathon</p>
+        <h1 id="hero-title">Build agents <br>people can <br><em>work with.</em></h1>
+        <p class="hero-description">HALHack brings developers, researchers, and designers together to build AI agents and the tools people need to understand and guide them.</p>
+        <a class="button signup-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdqJABBjGomKl8RuxCctWu_xx_ae_FIbQKlIT2qrqQNdUobwQ/viewform?usp=header" target="_blank" rel="noopener">Join the pilot</a>
+        <p class="small-note">We're gathering interest. Dates and details will follow.</p>
       </div>
-      <div class="swarm-panel">
-        <div class="panel-meta"><span><span class="tiny-cross" aria-hidden="true">+</span> Human / agent system</span><span class="mono">FIG. 01</span></div>
-        <div class="swarm-stage">
-          <svg id="swarm" viewBox="0 0 560 530" role="img" aria-labelledby="swarm-title swarm-desc">
-            <title id="swarm-title">A human within a network of 25 agents</title>
-            <desc id="swarm-desc">An illustrative diagram of agents connected to a human. Use the controls below to change the population or show a layer of oversight.</desc>
-            <defs><pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#d3d1c7"/></pattern></defs>
-            <rect width="560" height="530" fill="url(#dots)"/>
-            <g class="guide-rings" fill="none" stroke="#d5d2c7"><circle cx="280" cy="261" r="107"/><circle cx="280" cy="261" r="176"/><circle cx="280" cy="261" r="236" stroke-dasharray="3 7"/></g>
-            <g id="swarm-connections"><line x1="280.00" y1="150.60" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/><line x1="362.52" y1="351.08" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/><line x1="149.31" y1="249.53" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/><line x1="390.15" y1="176.55" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/><line x1="254.66" y1="404.28" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/><line x1="198.65" y1="133.12" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/><line x1="431.75" y1="301.79" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/><line x1="135.94" y1="335.82" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/><line x1="337.36" y1="103.95" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/><line x1="345.55" y1="419.81" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/><line x1="120.42" y1="186.32" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/><line x1="452.11" y1="207.02" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/><line x1="187.54" y1="420.54" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/><line x1="239.58" y1="77.13" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/><line x1="437.06" y1="371.42" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/><line x1="86.02" y1="286.14" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/><line x1="408.31" y1="108.76" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/><line x1="288.37" y1="463.32" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/><line x1="134.84" y1="115.13" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/><line x1="488.79" y1="270.65" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/><line x1="117.12" y1="396.92" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/><line x1="308.70" y1="47.71" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/><line x1="404.62" y1="440.11" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/><line x1="64.26" y1="212.47" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/><line x1="474.35" y1="149.63" x2="280" y2="261" stroke="#c0c4b3" stroke-width=".7" opacity=".35"/></g><g id="swarm-nodes"><circle cx="280.00" cy="150.60" r="5" fill="#e9623b"/><circle cx="362.52" cy="351.08" r="5" fill="#34452f"/><circle cx="149.31" cy="249.53" r="5" fill="#34452f"/><circle cx="390.15" cy="176.55" r="5" fill="#34452f"/><circle cx="254.66" cy="404.28" r="5" fill="#34452f"/><circle cx="198.65" cy="133.12" r="5" fill="#e9623b"/><circle cx="431.75" cy="301.79" r="5" fill="#34452f"/><circle cx="135.94" cy="335.82" r="5" fill="#34452f"/><circle cx="337.36" cy="103.95" r="5" fill="#34452f"/><circle cx="345.55" cy="419.81" r="5" fill="#34452f"/><circle cx="120.42" cy="186.32" r="5" fill="#e9623b"/><circle cx="452.11" cy="207.02" r="5" fill="#34452f"/><circle cx="187.54" cy="420.54" r="5" fill="#34452f"/><circle cx="239.58" cy="77.13" r="5" fill="#34452f"/><circle cx="437.06" cy="371.42" r="5" fill="#34452f"/><circle cx="86.02" cy="286.14" r="5" fill="#e9623b"/><circle cx="408.31" cy="108.76" r="5" fill="#34452f"/><circle cx="288.37" cy="463.32" r="5" fill="#34452f"/><circle cx="134.84" cy="115.13" r="5" fill="#34452f"/><circle cx="488.79" cy="270.65" r="5" fill="#34452f"/><circle cx="117.12" cy="396.92" r="5" fill="#e9623b"/><circle cx="308.70" cy="47.71" r="5" fill="#34452f"/><circle cx="404.62" cy="440.11" r="5" fill="#34452f"/><circle cx="64.26" cy="212.47" r="5" fill="#34452f"/><circle cx="474.35" cy="149.63" r="5" fill="#34452f"/></g><g id="monitor-nodes"></g>
-            <g class="human-node"><circle class="human-halo" cx="280" cy="261" r="61" fill="#ed5935" opacity=".09"/><rect x="238" y="219" width="84" height="84" rx="21" fill="#222820"/><circle cx="280" cy="243" r="9" fill="none" stroke="#f4f2eb" stroke-width="2"/><path d="M264 270c0-15 32-15 32 0" fill="none" stroke="#f4f2eb" stroke-width="2" stroke-linecap="round"/><text x="280" y="289" text-anchor="middle" fill="#f4f2eb" font-size="9" letter-spacing="2">HUMAN</text></g>
-            <g fill="#64695c" font-family="monospace" font-size="9" letter-spacing="1"><text x="22" y="29">UNDERSTAND</text><text x="476" y="29">STEER</text><text x="22" y="510">COLLABORATE</text><text x="453" y="510">EVALUATE</text></g>
-          </svg>
-          <span class="diagram-tag"><span class="status-dot" aria-hidden="true"></span><span id="diagram-label">25 agents. One human perspective.</span></span>
+      <figure class="hero-figure">
+        <a href="https://www.roblox.com/games/74139499982225" target="_blank" rel="noopener" aria-label="Explore the NANDA Town prototype on Roblox"><img src="assets/nandatown-replay.jpg" width="1024" height="576" alt="A NANDA Town replay in Roblox, with a marketplace, notice board, courthouse, and bank."></a>
+        <figcaption><span>NandaTown, our starting point.</span> A replay of an agent marketplace in Roblox.</figcaption>
+        <a class="plain-link" href="#playground">A closer look at the demo <span aria-hidden="true">→</span></a>
+      </figure>
+    </section>
+    <section id="about" class="about wrap ruled-section">
+      <div class="section-intro"><p class="overline">Why HALHack</p><h2>People should be able <br>to change what happens.</h2></div>
+      <div class="prose">
+        <p>As agents trade, negotiate, and coordinate, it gets harder for a person to follow their interactions. The question is how to help people understand the activity and make useful decisions.</p>
+        <p>HAL stands for the human-agent loop. We're interested in people who can change a plan, correct an agent, or reshape the rules while the work is happening.</p>
+        <p>The hackathon is a place to build and test those ideas. We'll look at what agents accomplish, what people understand, and whether their involvement changes the outcome.</p>
+      </div>
+    </section>
+    <section class="build-section wrap" aria-labelledby="build-title">
+      <h2 id="build-title">What you could build</h2>
+      <div class="build-list">
+        <article><h3>Agents and scenarios</h3><div><p>Build agents that cooperate or compete in a shared environment. Test what happens when different goals meet, or design an adversary that exposes a weakness.</p><p class="example">For example, an agent that spots a forged invoice or an attack that an existing monitor misses.</p></div></article>
+        <article><h3>Tools for human judgment</h3><div><p>Help people make sense of agent activity. Combine simple rules, models, and clear interfaces to bring the right cases to a person's attention.</p><p class="example">For example, a monitor that groups related events and shows the evidence behind a warning.</p></div></article>
+        <article><h3>Rules for a shared world</h3><div><p>Explore how identity, trust, and other protocols affect the way agents interact. Give people ways to change the rules and understand the consequences.</p><p class="example">For example, a council decision that makes trading safer, with a visible cost in speed.</p></div></article>
+      </div>
+      <p class="small-note">These are starting points. Pilot tasks and competition rules will be shared separately.</p>
+    </section>
+    <section id="playground" class="playground">
+      <div class="wrap playground-inner">
+        <div class="section-intro"><p class="overline">The experiment so far</p><h2>Start in NandaTown.</h2><p class="section-deck">A small world where agent behavior and human decisions are visible.</p></div>
+        <div class="prose">
+          <p>NANDA Town is an open-source sandbox for agents and the protocols they use. The Roblox prototype gives those interactions a physical setting, with a marketplace, registry, and places where people can intervene.</p>
+          <p>In the red-versus-blue prototype, participants can forge invoices, spoof identities, and try to catch those attacks. A council can change protocol settings and see the consequences.</p>
+          <p>People can observe, attack, defend, govern, or work alongside agents. The prototype helps us explore those roles before settling the hackathon format.</p>
+          <div class="resource-links"><a href="https://www.roblox.com/games/74139499982225" target="_blank" rel="noopener">Try the Roblox prototype <span aria-hidden="true">↗</span></a><a href="https://nandatown.projectnanda.org/" target="_blank" rel="noopener">Explore NANDA Town <span aria-hidden="true">↗</span></a><a href="https://github.com/projnanda/nandatown" target="_blank" rel="noopener">Read the code <span aria-hidden="true">↗</span></a></div>
         </div>
-        <div class="swarm-controls">
-          <div class="population-controls" role="group" aria-label="Illustrated agent population"><span>Agents</span><button data-count="5" aria-pressed="false">5</button><button data-count="25" aria-pressed="true">25</button><button data-count="100" aria-pressed="false">100</button></div>
-          <button id="oversight-toggle" class="oversight-toggle" aria-pressed="false"><span class="switch" aria-hidden="true"></span> Add oversight</button>
-        </div>
-        <p id="swarm-caption" class="diagram-caption" aria-live="polite">More interactions create more to interpret. Human attention stays limited.</p>
-        <div class="diagram-foot"><span>Concept illustration, not a benchmark</span><button id="motion-toggle" aria-pressed="false">Pause motion <span aria-hidden="true">Ⅱ</span></button></div>
       </div>
     </section>
-
-    <div class="topic-strip" aria-label="Hackathon themes"><span>Human agency</span><span aria-hidden="true">↗</span><span>Multi-agent systems</span><span aria-hidden="true">↗</span><span>Scalable oversight</span><span aria-hidden="true">↗</span><span>Shared governance</span></div>
-
-    <section id="challenge" class="challenge section-wrap">
-      <div class="section-heading"><p class="eyebrow">01 / The challenge</p><p class="side-note">Autonomy is growing.<br>Human influence should grow with it.</p></div>
-      <div class="intro-grid"><h2>Help people work<br>with a world of agents.</h2><div><p>When independently built agents trade, negotiate, and coordinate, their interactions can become difficult to follow. A useful system helps people decide where their judgment is needed.</p><p>HAL explores how people can participate throughout the work. You should be able to change a plan, correct an agent, or reshape a rule and see what happens next.</p></div></div>
-      <div class="challenge-directions">
-        <article><div class="direction-top"><span class="mono">01</span><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="7" y="22" width="22" height="22" rx="5"/><rect x="36" y="9" width="20" height="20" rx="5"/><rect x="36" y="39" width="20" height="20" rx="5"/><path d="M29 29 36 22M29 37l7 9"/></svg></div><h3>Build the agents.</h3><p>Create agents that cooperate, compete, and test one another. Explore what happens when different goals and behaviors meet in a shared world.</p><span class="direction-label">Agent builders + red teams</span></article>
-        <article><div class="direction-top"><span class="mono">02</span><svg viewBox="0 0 64 64" aria-hidden="true"><path d="m8 8 24 14L56 8M8 26l24 14 24-14M8 44l24 14 24-14M32 22v36"/><circle cx="32" cy="8" r="5"/></svg></div><h3>Design the oversight.</h3><p>Turn a stream of events into cases a person can understand. Combine rules, models, and clear interfaces to surface decisions that need human judgment.</p><span class="direction-label">Developers + interaction designers</span></article>
-        <article><div class="direction-top"><span class="mono">03</span><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 20h48M8 44h48M22 8v48M44 8v48"/><circle cx="22" cy="20" r="6"/><circle cx="44" cy="44" r="6"/></svg></div><h3>Shape the rules.</h3><p>Explore how identity, trust, and other protocols change collective behavior. Give people ways to govern the system and understand the tradeoffs.</p><span class="direction-label">Researchers + systems thinkers</span></article>
+    <section id="pilot" class="pilot wrap ruled-section">
+      <div class="section-intro"><p class="overline">Taking part</p><h2>We're starting <br>with a small pilot.</h2></div>
+      <div class="prose">
+        <p>The first group will help test the scenarios, tools, and human roles. What we learn will shape the tasks and format of future hackathon rounds.</p>
+        <p>If you'd like to take part, tell us what you want to build, test, or learn. You can register as an individual, and you don't need a finished agent to express interest.</p>
+        <dl class="event-details"><div><dt>Who it's for</dt><dd>Developers, researchers, designers, and people interested in working with agents.</dd></div><div><dt>When and where</dt><dd>Dates, location, and format are being finalized.</dd></div><div><dt>What happens next</dt><dd>The organizing team will follow up with participation details. Registering interest does not confirm a place.</dd></div></dl>
       </div>
-      <p class="section-footnote">These are directions to explore. Pilot tasks and competition rules will be shared separately.</p>
     </section>
-
-    <section class="human-section">
-      <div class="section-wrap human-grid"><div><p class="eyebrow">Designed around human agency</p><h2>Make human<br>participation count.</h2><p>Measure what people can understand and change, alongside what the agents accomplish. The goal is useful participation with manageable demands on attention.</p></div><div class="role-list"><div><span class="role-symbol">◎</span><strong>Observe</strong><span>Notice what the monitors miss.</span></div><div><span class="role-symbol">↗</span><strong>Challenge</strong><span>Find weaknesses through red teaming.</span></div><div><span class="role-symbol">⊞</span><strong>Defend</strong><span>Build oversight and judge difficult cases.</span></div><div><span class="role-symbol">⤧</span><strong>Govern</strong><span>Change the rules of the shared world.</span></div><div><span class="role-symbol">↔</span><strong>Collaborate</strong><span>Work alongside agents as a teammate.</span></div></div></div>
+    <section class="faq wrap ruled-section" aria-labelledby="faq-title">
+      <h2 id="faq-title">Questions</h2>
+      <div class="faq-list">
+        <details><summary>Do I need a team?</summary><p>You can register your interest as an individual. Team arrangements and technical requirements will be shared with the event details.</p></details>
+        <details><summary>What will we measure?</summary><p>We're interested in useful work, threats caught, and the attention required from people. We also want to know what people understood and whether their decisions changed the outcome. Detailed evaluation rules will follow.</p></details>
+        <details><summary>What can I explore before the event?</summary><p>Visit <a href="https://nandatown.projectnanda.org/" target="_blank" rel="noopener">NANDA Town</a>, read its <a href="https://nandatown.projectnanda.org/docs" target="_blank" rel="noopener">documentation</a>, or try the <a href="https://www.roblox.com/games/74139499982225" target="_blank" rel="noopener">Roblox prototype</a>. The final hackathon setup may differ from the prototype.</p></details>
+        <details><summary>How will you use my signup details?</summary><p>The organizing team will use your responses to plan the event and contact you about participation. Responses are private. Dates, final requirements, rules, and any prizes will be announced separately.</p></details>
+      </div>
     </section>
-
-    <section id="playground" class="playground section-wrap">
-      <div class="section-heading"><p class="eyebrow">02 / The playground</p><span class="mono">Explore the starting point ↙</span></div>
-      <div class="playground-grid"><figure class="demo-figure"><div class="demo-toolbar"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>NANDA TOWN / ROBLOX</span><span>↗</span></div><a href="https://www.roblox.com/games/74139499982225" target="_blank" rel="noopener" aria-label="Explore NANDA Town on Roblox"><img src="assets/nandatown-replay.jpg" width="1024" height="576" alt="A NANDA Town replay in Roblox showing a marketplace, gate, registry notice board, courthouse, review wall, and bank." loading="lazy"><span class="image-link">Explore the Roblox world <span aria-hidden="true">↗</span></span></a><figcaption>A replay of a NANDA Town run. The prototype is a starting point for the research.</figcaption></figure><div class="playground-copy"><h2>A town where <br>the rules are <br>part of the experiment.</h2><p>NANDA Town is an open-source sandbox for agents and the protocols they use. Its Roblox prototype makes agent activity visible in a shared world.</p><p>The red-versus-blue prototype explores forged invoices, spoofed identities, and human oversight. A council can change protocol settings and see the consequences.</p><a class="text-link" href="https://nandatown.projectnanda.org/" target="_blank" rel="noopener">Explore NANDA Town <span aria-hidden="true">↗</span></a><a class="text-link secondary-resource" href="https://github.com/projnanda/nandatown" target="_blank" rel="noopener">View the open-source code <span aria-hidden="true">↗</span></a></div></div>
+    <section class="join-section" aria-labelledby="join-title">
+      <div class="wrap join-inner"><div><h2 id="join-title">Join us for the pilot.</h2><p>Tell us what you'd like to work on. We'll be in touch when the details are ready.</p></div><a class="button signup-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdqJABBjGomKl8RuxCctWu_xx_ae_FIbQKlIT2qrqQNdUobwQ/viewform?usp=header" target="_blank" rel="noopener">Register your interest</a></div>
     </section>
-
-    <section id="format" class="format-section section-wrap">
-      <div class="section-heading"><p class="eyebrow">03 / How it works</p><span class="status-label"><span class="status-dot" aria-hidden="true"></span> Starting with a pilot</span></div>
-      <div class="format-top"><h2>Build. Test. <br>Learn together.</h2><p>HALHack begins with a small pilot to test the experience. Future rounds will explore more capable agents, richer interactions, and more ways for people to shape the system.</p></div>
-      <ol class="timeline"><li><span class="timeline-number">1</span><h3>Register your interest.</h3><p>Tell us what you want to build or explore. We welcome interest from developers, researchers, designers, and curious collaborators.</p></li><li><span class="timeline-number">2</span><h3>Take part in the pilot.</h3><p>Selected participants will help test scenarios and the human roles around them. The team will share the setup and participation details.</p></li><li><span class="timeline-number">3</span><h3>Help shape future rounds.</h3><p>Use what the pilot teaches us to improve the tasks, tools, and evaluation. Explore increasingly complex agent interactions.</p></li></ol>
-      <div class="evaluation"><p class="eyebrow">What we want to learn</p><div><span>Useful work</span><span>Threats caught</span><span>Human understanding</span><span>Human influence</span><span>Attention required</span></div></div>
-    </section>
-
-    <section class="faq-section section-wrap" aria-labelledby="faq-title"><div><p class="eyebrow">Before you join</p><h2 id="faq-title">A few details.</h2><p>We're starting small and developing the format with the pilot.</p></div><div class="faq-list"><details><summary>Who is HALHack for?<span aria-hidden="true">+</span></summary><p>People interested in AI agents and how humans work with them. Building agents, designing interfaces, studying human behavior, and testing systems are all useful perspectives. Final participation requirements will be shared before the event.</p></details><details><summary>Do I need a team or a finished agent?<span aria-hidden="true">+</span></summary><p>You can register your interest as an individual with an idea or an area you'd like to explore. Team arrangements and technical requirements will be shared with the event details.</p></details><details><summary>When and where will it happen?<span aria-hidden="true">+</span></summary><p>Dates, location, and the online or in-person format are still being finalized. The interest form is the way to hear from the organizing team when those details are ready.</p></details><details><summary>What can I explore today?<span aria-hidden="true">+</span></summary><p>Visit <a href="https://nandatown.projectnanda.org/" target="_blank" rel="noopener">NANDA Town</a>, read its <a href="https://nandatown.projectnanda.org/docs" target="_blank" rel="noopener">documentation</a>, or explore the <a href="https://www.roblox.com/games/74139499982225" target="_blank" rel="noopener">Roblox prototype</a>. The prototype demonstrates research ideas; the final hackathon setup may differ.</p></details><details><summary>What happens after I sign up?<span aria-hidden="true">+</span></summary><p>The organizing team will use your responses to plan the event and contact you about participation. Registering interest does not confirm a place. Dates, rules, and any prizes will be announced separately.</p></details></div></section>
-
-    <section id="join" class="join-section"><div class="section-wrap join-grid"><div><p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Pilot interest is open</p><h2>Help build the<br>human–agent loop.</h2><p>Bring your perspective on what people and agents<br class="desktop-break"> should be able to do together.</p></div><div class="join-action"><a class="button button-cream signup-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdqJABBjGomKl8RuxCctWu_xx_ae_FIbQKlIT2qrqQNdUobwQ/viewform?usp=header" target="_blank" rel="noopener">Register your interest <span aria-hidden="true">↗</span></a><p>A short Google Form.<br>We'll follow up with participation details.</p></div></div><div class="oversized-wordmark" aria-hidden="true">HALHack<span>↗</span></div></section>
   </main>
-  <footer class="site-footer section-wrap"><a class="wordmark" href="#">HAL<span class="wordmark-light">Hack</span><span class="logo-dot" aria-hidden="true"></span></a><p>The human–agent loop hackathon</p><div><a href="https://nandatown.projectnanda.org/" target="_blank" rel="noopener">NANDA Town ↗</a><a href="https://github.com/projnanda/nandatown" target="_blank" rel="noopener">GitHub ↗</a><a href="#main">Back to top ↑</a></div></footer>
+  <footer class="site-footer wrap"><div><a class="wordmark" href="#main">HALHack</a><p>The human-agent loop hackathon</p></div><nav aria-label="Footer"><a href="https://nandatown.projectnanda.org/" target="_blank" rel="noopener">NANDA Town</a><a href="https://github.com/projnanda/nandatown" target="_blank" rel="noopener">GitHub</a><a href="#main">Back to top</a></nav></footer>
 </body>
 </html>
